@@ -1,0 +1,14 @@
+package d_composition;
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car("BMW", 2010, "V8");
+
+        System.out.println(car.model);
+        System.out.println(car.year);
+        System.out.println(car.engine);
+
+        car.start();
+        car.engine.start();
+    }
+}
