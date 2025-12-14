@@ -41,7 +41,7 @@ public class Main {
 
         System.out.println("========== Polechudes ===========");
 
-        while(wrongGuesses < 5){
+        while(wrongGuesses < 6){
 
             System.out.println("\n");
             System.out.println(getArt(wrongGuesses));
@@ -86,23 +86,27 @@ public class Main {
     static String getArt(int wrongGuesses){
         return switch(wrongGuesses){
             case 0 -> """
-            HP: =*****=   
+            HP: =******=   
                     """;
             case 1 -> """
-            HP: =**** =        
+            HP: =***** =   
                     """;
             case 2 -> """
-            HP: =***  =
+            HP: =****  =        
                     """;
             case 3 -> """
-            HP: =**   =
+            HP: =***   =
                     """;
             case 4 -> """
-            HP: =*    =
+            HP: =**    =
                     """;
             case 5 -> """
-            HP: =     =
+            HP: =*     =
                     """;
+            case 6 -> """
+            HP: =      =
+                    """;
+                    
             default -> "";
         };
 
