@@ -29,7 +29,10 @@ public class Main {
                 System.out.println("Reason of error " + e);
             }
         }
-        System.out.println(map);
+        System.out.println("get info about");
+
+        String str = sc.nextLine();
+        System.out.println(map.get(str).getPersonInfo());
         
         /*
         map.put("banana", 0.15);
